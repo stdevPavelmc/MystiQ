@@ -215,6 +215,17 @@ void MediaPlayerWidget::refreshTimeDisplay()
 
 void MediaPlayerWidget::refreshButtonState()
 {
+
+#ifdef Q_OS_LINUX
+    QIcon icon = QIcon::fromTheme("media-playback-play");
+    switch (mplayer->state()) {
+    case MyQMPwidget::PlayingState:
+        icon = QIcon::fromTheme("media-playback-pause"); break;
+    default:
+        break;
+    }
+    ui->btnPlayPause->setIcon(icon);
+#else
     QString button_icon = ":/actions/icons/media-playback-start";
     switch (mplayer->state()) {
     case MyQMPwidget::PlayingState:
@@ -223,6 +234,9 @@ void MediaPlayerWidget::refreshButtonState()
         break;
     }
     ui->btnPlayPause->setIcon(QIcon(button_icon));
+#endif
+
+
 }
 
 void MediaPlayerWidget::playerStateChanged()

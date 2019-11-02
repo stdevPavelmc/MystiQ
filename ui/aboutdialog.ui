@@ -23,11 +23,11 @@
       <enum>QTabWidget::North</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tabInfo">
       <attribute name="icon">
-       <iconset resource="../images.qrc">
+       <iconset theme="help-about" resource="../images.qrc">
         <normaloff>:/actions/icons/info.png</normaloff>:/actions/icons/info.png</iconset>
       </attribute>
       <attribute name="title">
@@ -41,7 +41,7 @@
      </widget>
      <widget class="QWidget" name="tabTranslators">
       <attribute name="icon">
-       <iconset resource="../images.qrc">
+       <iconset theme="view-list-text" resource="../images.qrc">
         <normaloff>:/actions/icons/translators.png</normaloff>:/actions/icons/translators.png</iconset>
       </attribute>
       <attribute name="title">
@@ -55,7 +55,7 @@
      </widget>
      <widget class="QWidget" name="tab">
       <attribute name="icon">
-       <iconset resource="../images.qrc">
+       <iconset theme="tools" resource="../images.qrc">
         <normaloff>:/actions/icons/legal.png</normaloff>:/actions/icons/legal.png</iconset>
       </attribute>
       <attribute name="title">
@@ -79,7 +79,7 @@
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="icon">
-       <iconset resource="../images.qrc">
+       <iconset theme="story-editor" resource="../images.qrc">
         <normaloff>:/actions/icons/changelog.png</normaloff>:/actions/icons/changelog.png</iconset>
       </attribute>
       <attribute name="title">

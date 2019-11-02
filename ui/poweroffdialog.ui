@@ -58,7 +58,7 @@
         <string notr="true">DoAction</string>
        </property>
        <property name="icon">
-        <iconset theme="ok">
+        <iconset theme="dialog-ok">
          <normaloff>.</normaloff>.</iconset>
        </property>
       </widget>
@@ -69,7 +69,7 @@
         <string>Cancel</string>
        </property>
        <property name="icon">
-        <iconset resource="../images.qrc">
+        <iconset theme="dialog-cancel" resource="../images.qrc">
          <normaloff>:/actions/icons/dialog_cancel.png</normaloff>:/actions/icons/dialog_cancel.png</iconset>
        </property>
       </widget>

@@ -82,7 +82,7 @@
            <string/>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="list-add" resource="../images.qrc">
             <normaloff>:/actions/icons/add.png</normaloff>:/actions/icons/add.png</iconset>
           </property>
           <property name="iconSize">
@@ -105,7 +105,7 @@
            <string/>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="list-remove" resource="../images.qrc">
             <normaloff>:/actions/icons/remove.png</normaloff>:/actions/icons/remove.png</iconset>
           </property>
          </widget>
@@ -204,7 +204,7 @@
            <string>Edit</string>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="document-edit" resource="../images.qrc">
             <normaloff>:/actions/icons/edit_preset.png</normaloff>:/actions/icons/edit_preset.png</iconset>
           </property>
          </widget>
@@ -260,7 +260,7 @@
             <string>Browse</string>
            </property>
            <property name="icon">
-            <iconset resource="../images.qrc">
+            <iconset theme="system-search" resource="../images.qrc">
              <normaloff>:/actions/icons/search.png</normaloff>:/actions/icons/search.png</iconset>
            </property>
           </widget>

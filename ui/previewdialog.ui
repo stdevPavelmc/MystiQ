@@ -35,7 +35,7 @@
         <string>Play Selected Range</string>
        </property>
        <property name="icon">
-        <iconset resource="../images.qrc">
+        <iconset theme="media-playback-start" resource="../images.qrc">
          <normaloff>:/actions/icons/preview_play.png</normaloff>:/actions/icons/preview_play.png</iconset>
        </property>
       </widget>

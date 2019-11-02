@@ -49,7 +49,7 @@
            <string>Mark as Begin</string>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="flag" resource="../images.qrc">
             <normaloff>:/actions/icons/mark.png</normaloff>:/actions/icons/mark.png</iconset>
           </property>
          </widget>
@@ -60,7 +60,7 @@
            <string>Seek to Begin</string>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="go-first" resource="../images.qrc">
             <normaloff>:/actions/icons/seek_to_begin.png</normaloff>:/actions/icons/seek_to_begin.png</iconset>
           </property>
          </widget>
@@ -79,7 +79,7 @@
          <string>Play Selection</string>
         </property>
         <property name="icon">
-         <iconset resource="../images.qrc">
+         <iconset theme="media-playback-start" resource="../images.qrc">
           <normaloff>:/actions/icons/preview_play.png</normaloff>:/actions/icons/preview_play.png</iconset>
         </property>
        </widget>
@@ -92,7 +92,7 @@
            <string>Mark as End</string>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="flag" resource="../images.qrc">
             <normaloff>:/actions/icons/mark.png</normaloff>:/actions/icons/mark.png</iconset>
           </property>
          </widget>
@@ -103,7 +103,7 @@
            <string>Seek to End</string>
           </property>
           <property name="icon">
-           <iconset resource="../images.qrc">
+           <iconset theme="go-last" resource="../images.qrc">
             <normaloff>:/actions/icons/seek_to_end.png</normaloff>:/actions/icons/seek_to_end.png</iconset>
           </property>
          </widget>

@@ -34,7 +34,7 @@
        <item>
         <widget class="QPushButton" name="btnPlayPause">
          <property name="icon">
-          <iconset resource="../images.qrc">
+          <iconset theme="media-playback-start" resource="../images.qrc">
            <normaloff>:/actions/icons/media-playback-start.png</normaloff>:/actions/icons/media-playback-start.png</iconset>
          </property>
         </widget>
@@ -42,7 +42,7 @@
        <item>
         <widget class="QPushButton" name="btnReset">
          <property name="icon">
-          <iconset resource="../images.qrc">
+          <iconset theme="media-skip-backward" resource="../images.qrc">
            <normaloff>:/actions/icons/media-skip-backward.png</normaloff>:/actions/icons/media-skip-backward.png</iconset>
          </property>
         </widget>
@@ -53,7 +53,7 @@
           <string notr="true"/>
          </property>
          <property name="icon">
-          <iconset resource="../images.qrc">
+          <iconset theme="media-seek-backward" resource="../images.qrc">
            <normaloff>:/actions/icons/media-seek-backward.png</normaloff>:/actions/icons/media-seek-backward.png</iconset>
          </property>
         </widget>
@@ -61,7 +61,7 @@
        <item>
         <widget class="QPushButton" name="btnForward">
          <property name="icon">
-          <iconset resource="../images.qrc">
+          <iconset theme="media-seek-forward" resource="../images.qrc">
            <normaloff>:/actions/icons/media-seek-forward.png</normaloff>:/actions/icons/media-seek-forward.png</iconset>
          </property>
         </widget>

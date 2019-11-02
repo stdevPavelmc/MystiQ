@@ -189,7 +189,7 @@
   </widget>
   <action name="actionAddFiles">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="document-new" resource="../images.qrc">
      <normaloff>:/actions/icons/add.png</normaloff>:/actions/icons/add.png</iconset>
    </property>
    <property name="text">
@@ -213,7 +213,7 @@
   </action>
   <action name="actionExit">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="application-exit" resource="../images.qrc">
      <normaloff>:/actions/icons/exit.png</normaloff>:/actions/icons/exit.png</iconset>
    </property>
    <property name="text">
@@ -225,7 +225,7 @@
   </action>
   <action name="actionStartConversion">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="media-playback-start" resource="../images.qrc">
      <normaloff>:/actions/icons/start.png</normaloff>:/actions/icons/start.png</iconset>
    </property>
    <property name="text">
@@ -240,7 +240,7 @@
   </action>
   <action name="actionStopConversion">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="media-playback-stop" resource="../images.qrc">
      <normaloff>:/actions/icons/stop.png</normaloff>:/actions/icons/stop.png</iconset>
    </property>
    <property name="text">
@@ -252,7 +252,7 @@
   </action>
   <action name="actionSetParameters">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="applications-utilities" resource="../images.qrc">
      <normaloff>:/actions/icons/settings.png</normaloff>:/actions/icons/settings.png</iconset>
    </property>
    <property name="text">
@@ -279,7 +279,7 @@
   </action>
   <action name="actionOpenOutputFolder">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="folder-open" resource="../images.qrc">
      <normaloff>:/actions/icons/open_folder.png</normaloff>:/actions/icons/open_folder.png</iconset>
    </property>
    <property name="text">
@@ -303,7 +303,7 @@
   </action>
   <action name="actionRemoveSelectedItems">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="edit-delete" resource="../images.qrc">
      <normaloff>:/actions/icons/remove.png</normaloff>:/actions/icons/remove.png</iconset>
    </property>
    <property name="text">
@@ -315,7 +315,7 @@
   </action>
   <action name="actionRemoveCompletedItems">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="weather-clear" resource="../images.qrc">
      <normaloff>:/actions/icons/remove_completed.png</normaloff>:/actions/icons/remove_completed.png</iconset>
    </property>
    <property name="text">
@@ -330,7 +330,7 @@
   </action>
   <action name="actionClearList">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="edit-clear" resource="../images.qrc">
      <normaloff>:/actions/icons/clear.png</normaloff>:/actions/icons/clear.png</iconset>
    </property>
    <property name="text">
@@ -345,7 +345,7 @@
   </action>
   <action name="actionRetry">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="edit-undo" resource="../images.qrc">
      <normaloff>:/actions/icons/retry.png</normaloff>:/actions/icons/retry.png</iconset>
    </property>
    <property name="text">
@@ -360,7 +360,7 @@
   </action>
   <action name="actionRetryAll">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="media-playlist-repeat" resource="../images.qrc">
      <normaloff>:/actions/icons/retry_all.png</normaloff>:/actions/icons/retry_all.png</iconset>
    </property>
    <property name="text">
@@ -372,7 +372,7 @@
   </action>
   <action name="actionOptions">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="preferences-system" resource="../images.qrc">
      <normaloff>:/actions/icons/configure.png</normaloff>:/actions/icons/configure.png</iconset>
    </property>
    <property name="text">
@@ -384,7 +384,7 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="help-about" resource="../images.qrc">
      <normaloff>:/actions/icons/about.png</normaloff>:/actions/icons/about.png</iconset>
    </property>
    <property name="text">
@@ -396,7 +396,7 @@
   </action>
   <action name="actionChangeOutputFilename">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="edit-paste" resource="../images.qrc">
      <normaloff>:/actions/icons/edit_file_name.png</normaloff>:/actions/icons/edit_file_name.png</iconset>
    </property>
    <property name="text">
@@ -408,7 +408,7 @@
   </action>
   <action name="actionChangeOutputDirectory">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="folder" resource="../images.qrc">
      <normaloff>:/actions/icons/edit_folder_name.png</normaloff>:/actions/icons/edit_folder_name.png</iconset>
    </property>
    <property name="text">
@@ -420,19 +420,16 @@
   </action>
   <action name="actionPoweroff">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="system-shutdown" resource="../images.qrc">
      <normaloff>:/actions/icons/poweroff.png</normaloff>:/actions/icons/poweroff.png</iconset>
    </property>
    <property name="text">
     <string>Poweroff</string>
    </property>
-   <property name="shortcut">
-    <string notr="true"/>
-   </property>
   </action>
   <action name="actionShowErrorMessage">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="dialog-error" resource="../images.qrc">
      <normaloff>:/actions/icons/error.png</normaloff>:/actions/icons/error.png</iconset>
    </property>
    <property name="text">
@@ -441,7 +438,7 @@
   </action>
   <action name="actionCheckUpdate">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="system-software-update" resource="../images.qrc">
      <normaloff>:/actions/icons/check_update.png</normaloff>:/actions/icons/check_update.png</iconset>
    </property>
    <property name="text">
@@ -450,7 +447,7 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset resource="../images.qrc">
+    <iconset theme="edit-cut" resource="../images.qrc">
      <normaloff>:/actions/icons/cut.png</normaloff>:/actions/icons/cut.png</iconset>
    </property>
    <property name="text">

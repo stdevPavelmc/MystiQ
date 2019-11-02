@@ -29,7 +29,7 @@
        </property>
        <widget class="QWidget" name="tab_audio">
         <attribute name="icon">
-         <iconset resource="../images.qrc">
+         <iconset theme="audio-headphones" resource="../images.qrc">
           <normaloff>:/actions/icons/audio.png</normaloff>:/actions/icons/audio.png</iconset>
         </attribute>
         <attribute name="title">
@@ -194,7 +194,7 @@
        </widget>
        <widget class="QWidget" name="tab_video">
         <attribute name="icon">
-         <iconset resource="../images.qrc">
+         <iconset theme="camera-video" resource="../images.qrc">
           <normaloff>:/actions/icons/video.png</normaloff>:/actions/icons/video.png</iconset>
         </attribute>
         <attribute name="title">
@@ -444,7 +444,7 @@
        </widget>
        <widget class="QWidget" name="tab_time">
         <attribute name="icon">
-         <iconset resource="../images.qrc">
+         <iconset theme="preview-add-zone" resource="../images.qrc">
           <normaloff>:/actions/icons/time.png</normaloff>:/actions/icons/time.png</iconset>
         </attribute>
         <attribute name="title">
@@ -481,7 +481,7 @@
                  <string comment="Cut video; select a range to convert">Cut</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="../images.qrc">
+                 <iconset theme="edit-cut" resource="../images.qrc">
                   <normaloff>:/actions/icons/cut.png</normaloff>:/actions/icons/cut.png</iconset>
                 </property>
                </widget>
@@ -492,7 +492,7 @@
                  <string>&amp;Preview</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="../images.qrc">
+                 <iconset theme="preview-render-on" resource="../images.qrc">
                   <normaloff>:/actions/icons/preview_play.png</normaloff>:/actions/icons/preview_play.png</iconset>
                 </property>
                </widget>
@@ -539,7 +539,7 @@
        </widget>
        <widget class="QWidget" name="tab_advanced">
         <attribute name="icon">
-         <iconset resource="../images.qrc">
+         <iconset theme="settings-configure" resource="../images.qrc">
           <normaloff>:/actions/icons/settings.png</normaloff>:/actions/icons/settings.png</iconset>
         </attribute>
         <attribute name="title">
