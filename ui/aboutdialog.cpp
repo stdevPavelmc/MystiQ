@@ -25,15 +25,6 @@
  #include "services/notificationservice-libnotify.h"
 #endif
 
-#define PROJECT_HOMEPAGE "https://mystiq.swlx.info/"
-
-namespace {
-QString url(QString lnk)
-{
-    return QString("<a href=\"%1\">%1</a>").arg(lnk);
-}
-}
-
 AboutDialog::AboutDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AboutDialog)
@@ -43,51 +34,26 @@ AboutDialog::AboutDialog(QWidget *parent) :
     QTextBrowser *info = ui->txtInfo;
     QTextBrowser *translators = ui->txtTranslators;
 
-    info->setOpenExternalLinks(true);
-
-    info->setText(
-         "<b>MystiQ </b>"+ tr("%1").arg(VERSION_STRING)
+    QString versionId = " %1";
 #ifdef VERSION_ID_STRING
-         + QString(" %1").arg(QString(VERSION_ID_STRING))
+    versionId = versionId.arg(QString(VERSION_ID_STRING));
 #endif
-         + " "
-         + ((Constants::getBool("Portable"))
-                /*: Portable version (no installation, no writing registry) */
-                ? tr("Portable") : "")
-         + "<br>"
-         /*: Qt version */
-         + tr("Compiled with Qt %1").arg(QT_VERSION_STR)
-#ifdef USE_LIBNOTIFY /*: libnotify version */
-                + "<br>" + tr("Compiled with libnotify %1")
-                .arg(NotificationService_libnotify::getVersion())
-#endif
-         + "<br>"
-         + tr("MystiQ Homepage: %1").arg(url(PROJECT_HOMEPAGE))
-         + "<br>"
-         + tr("MystiQ is a GUI frontend for FFmpeg.")
-         + "<br><br>"
-         //: %1 is the name and email of the programmer
-         + tr("Developers:<br> %1").arg("<b>Maikel Llamaret Heredia</b>: llamaret@webmisolutions.com<br><b>Gabriel A. López López</b>: glpz@daxslab.com") + "<br><br>"
-         //: %1 is the name and email of the logo designer
-         + tr("Aplication Name:<br> %1").arg("<b>Hugo Florentino</b>: cre8or@gmx.net") + "<br><br>"
-         + tr("This program is free software; you can redistribute it and/or modify it "
-              "under the terms of the GNU General Public License version 2 or 3.")
-         + "<br><br>"
-         + tr("Some audio-processing functionalities are provided by SoX.")
-         + " (" + url("http://sox.sourceforge.net/") + ")<br><br>"
-         + tr("FFmpeg presets were taken from <b>VideoMorph</b>, <b>QWinff</b>, <b>Curlew</b>, <b>Ciano</b> and <b>FF Multi Converter</b>.")+"<br>"
-         + " (" + url("https://videomorph.webmisolutions.com/") + ")<br>"
-         + " (" + url("http://qwinff.github.io") + ")<br>"
-         + " (" + url("http://sourceforge.net/projects/curlew") + ")<br>"
-         + " (" + url("https://robertsanseries.github.io/ciano/") + ")<br>"
-         + " (" + url("https://sites.google.com/site/ffmulticonverter/") + ")"
-         + "<br>"
-         );
-    translators->setHtml(getTranslators());
-    //translators->setText(getTranslators());
 
-    // Constraint the width of text area to the width of the banner.
-    //info->setMaximumWidth(ui->lblBanner->pixmap()->width());
+    QString libnotifyVersion;
+#ifdef USE_LIBNOTIFY
+    libnotifyVersion = QString(" and libnotify %1").arg(NotiticationService_libnotify::getVersion());
+#endif
+
+    QString aboutText = info->toHtml();
+    aboutText = aboutText
+            .arg(VERSION_STRING)
+            .arg(versionId)
+            .arg(Constants::getBool("Portable") ? "Portable" : "")
+            .arg(QT_VERSION_STR)
+            .arg(libnotifyVersion);
+    info->setText(aboutText);
+
+    translators->setHtml(getTranslators());
 
     // Set the background color of the textbox to the color of the window.
     QPalette p = info->palette();

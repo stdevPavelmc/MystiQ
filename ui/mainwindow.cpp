@@ -812,8 +812,3 @@ void MainWindow::refresh_titlebar()
         setWindowTitle(tr("MystiQ"));
     }
 }
-
-void MainWindow::on_pushButton_clicked()
-{
-    this->close();
-}
